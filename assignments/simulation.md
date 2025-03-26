@@ -24,7 +24,7 @@ http://<YOUR_GITHUB_USERNAME>.github.io/game-dev-spring2025/builds/simulation-1
 
 *Due 4-2-25*
 
-<img src="./images/astar.png" width="500" align="center">
+<img src="./images/astar.png" width="500" align="right">
 
 NOTE: For this assignment you will be working in a group of three. Feel free to either start from one of your previous projects, or to start from scratch.
 
@@ -32,9 +32,9 @@ The main activity of this prototype is for you to integrate pathplanning into yo
 
 In addition to integrating pathplanning, you need to meaningfully visualize the state of the cell.
 
-### Resources
+### (https://github.com/mtreanor/game615-spring2025/blob/main/examples/simulation/aStarStarterPackage.unitypackage)[Resources]
 
-In order to do this, you will need to have an implementation of a path planning algorithm. For a starter project and full implementation of A*, [https://github.com/mtreanor/game615-spring2025/blob/main/examples/simulation/aStarStarterPackage.unitypackage](go here) and click on the "download raw" button. This will download a Unity Package that can be dragged and dropped into your project. This will open a window asking what you want to import. Import everything. To make the example work, you will need to do two things:
+In order to do this, you will need to have an implementation of a path planning algorithm. For a starter project and full implementation of A*, (https://github.com/mtreanor/game615-spring2025/blob/main/examples/simulation/aStarStarterPackage.unitypackage)[go here] and click on the "download raw" button. This will download a Unity Package that can be dragged and dropped into your project. This will open a window asking what you want to import. Import everything. To make the example work, you will need to do two things:
 
 1. Drag the "GridManager" prefab into the Scene.
 2. Select the Cell prefab, create a "cell" layer, and apply that layer to the cell (and its children if it asks).
