@@ -10,7 +10,7 @@ public class GridManagerEditor : Editor
 
         if (GUILayout.Button("Generate Grid")) {
             GridManager gridManager = (GridManager)target;
-            gridManager.GenereateGrid();
+            gridManager.GenerateGrid();
         }
     }
 }

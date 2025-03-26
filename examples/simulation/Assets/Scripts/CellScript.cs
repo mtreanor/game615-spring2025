@@ -10,25 +10,17 @@ public class CellScript : MonoBehaviour
     [SerializeField] GameObject heightCube;
     private Material heightCubeMaterial;
 
+    Color defaultColor;
+
     // Cell state with property to update visuals when changed
-    private CellState _state = new CellState();
-    public CellState State
-    {
-        get
-        {
-            return _state;
-        }
-        set
-        {
-            _state = value;
-            UpdateVisuals();
-        }
-    }
+    public CellState State = new CellState();
+
 
     void Start()
     {
         // Cache the material for performance and initialize visuals
         heightCubeMaterial = heightCube.GetComponentInChildren<Renderer>().material;
+        defaultColor = heightCubeMaterial.color;
         UpdateVisuals();
     }
 
@@ -36,6 +28,11 @@ public class CellScript : MonoBehaviour
     {
         
     }
+
+    void ResetCellState() {
+        State.height = 0;
+        UpdateVisuals();
+    }   
 
     public void Hover() {
         selectionPlane.SetActive(true);
@@ -49,19 +46,15 @@ public class CellScript : MonoBehaviour
     }
 
     public void Clicked() {
-        State.height += 5;
-        State.height = Mathf.Clamp(State.height, 0, GridManager.Instance.maxHeight);
-        UpdateVisuals();
+        
     }
 
     public void RightClicked() {
-        State.height -= 5;
-        State.height = Mathf.Clamp(State.height, 0, GridManager.Instance.maxHeight);
-        UpdateVisuals();
+        
     }   
 
     // Calculates the next state of this cell for the simulation
-    public CellState GenereateNextSimulationStep()
+    public CellState GenerateNextSimulationStep()
     {
         // Create a copy of the current state to modify
         CellState nextState = this.State.Clone();
@@ -73,27 +66,39 @@ public class CellScript : MonoBehaviour
 
     void ApplyMountainSmoothing(CellState cellState) {
         // Get all neighboring cells (excluding the current cell)
-        List<CellState> neighborStates = GridManager.Instance.GetCellStatesInRange(State.x,State.y,1,1);
+        List<CellScript> neighbors = GridManager.Instance.GetNeighbors(this, true);
         
         // Calculate the average height of all neighboring cells
         float totalHeight = 0;
-        foreach (CellState neighborState in neighborStates) {
-            totalHeight += neighborState.height;
+        foreach (CellScript neighbor in neighbors) {
+            totalHeight += neighbor.State.height;
         }
         
         // Set the next height to be the average of all neighbors
         // This creates a smoothing/diffusion effect across the grid
-        cellState.height = totalHeight / neighborStates.Count;
+        cellState.height = totalHeight / neighbors.Count;
     }
 
     // Updates the visual representation of the cell based on its state
-    void UpdateVisuals()
+    public void UpdateVisuals()
     {
         // Adjust the height cube to match the cell's height value
-        heightCube.transform.localScale = new Vector3(1, State.height, 1);
-        
-        // Update the material with normalized height value (0-1 range)
-        // This controls the color based on height (based on the material shader - see the CellShader for more details, or ignore this if this is new to you)
-        heightCubeMaterial.SetFloat("_height", State.height/GridManager.Instance.maxHeight);
+        if (heightCube != null) {
+            heightCube.transform.localScale = new Vector3(1, State.height, 1);
+        }
+
+        if (State.pathStateVisuals == "start") {
+            heightCubeMaterial.color = Color.white;
+        } else if (State.pathStateVisuals == "end") {
+            heightCubeMaterial.color = Color.black;
+        } else if (State.pathStateVisuals == "open") {
+            heightCubeMaterial.color = Color.green;
+        } else if (State.pathStateVisuals == "closed") {
+            heightCubeMaterial.color = Color.red;
+        } else if (State.pathStateVisuals == "path") {
+            heightCubeMaterial.color = Color.blue;
+        } else {
+            heightCubeMaterial.color = defaultColor;
+        }
     }
 }
