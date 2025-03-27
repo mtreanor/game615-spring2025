@@ -34,7 +34,7 @@ In addition to integrating pathplanning, you need to meaningfully visualize the 
 
 ### Resources
 
-In order to do this, you will need to have an implementation of a path planning algorithm. For a starter project and full implementation of A*, [https://github.com/mtreanor/game615-spring2025/blob/main/examples/simulation/aStarStarterPackage.unitypackage](go here) and click on the "download raw" button. This will download a Unity Package that can be dragged and dropped into your project. This will open a window asking what you want to import. Import everything. To make the example work, you will need to do two things:
+In order to do this, you will need to have an implementation of a path planning algorithm. For a starter project and full implementation of A*, [go here](https://github.com/mtreanor/game615-spring2025/blob/main/examples/simulation/aStarStarterPackage.unitypackage) ([https://github.com/mtreanor/game615-spring2025/blob/main/examples/simulation/aStarStarterPackage.unitypackage](https://github.com/mtreanor/game615-spring2025/blob/main/examples/simulation/aStarStarterPackage.unitypackage)) and click on the "download raw" button. This will download a Unity Package that can be dragged and dropped into your project. This will open a window asking what you want to import. Import everything. To make the example work, you will need to do two things:
 
 1. Drag the "GridManager" prefab into the Scene.
 2. Select the Cell prefab, create a "cell" layer, and apply that layer to the cell (and its children if it asks).
