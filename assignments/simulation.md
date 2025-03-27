@@ -47,3 +47,4 @@ To begin experimenting with using pathplanning to influence each cell's evolutio
 - `CalculateCost(CellScript a, CellScript b)`: This returns how much the algorithm thinks it costs to move from one cell to another. Currently all movement is just 1, however, you could imagine making it "move expensive" to move to higher pollution areas, or "cheaper" to move between cells of the same type, or any other such thing.
 - `Heuristic(CellScript a, CellScript b)`: You may want to experiment with how the algorithm "guesses" how much it will costs to get to the end.
 
+Also, [here is the youtube video description](https://www.youtube.com/watch?v=-L-WgKMFuhE) of A* from class.
