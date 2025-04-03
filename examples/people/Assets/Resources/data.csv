@@ -1,0 +1,5 @@
+questState,character,condition1Left,condition1Comp,condition1Right,condition2Left,condition2Comp,condition2Right,effectLeft,effectOp,effectRight,feedbackScore,line1,line2,line3,event
+Q1T1,Emma,playerWearing,equals,Green shirt,,,,pubDoorLocked,equals,FALSE,,"Right this way, fellow worker!","Come on in, worker!",,
+Q1T1,Emma,deniedRequestCount,greater,1,,,,deniedRequestCount,add,1,1,"Give it up, pal. I can't let you in unless you're wearing a green shirt.","Sorry buddy, no green shirt, no entry",,
+Q1T1,Emma,deniedRequestCount,greater,0,,,,deniedRequestCount,add,1,2,"Sorry, but I can't let you in. Only workers allowed.",No admittance - I can only let workers in. ,,
+Q1T1,Emma,default,,,,,,deniedRequestCount,add,1,3,You're not allowed in here.,,,

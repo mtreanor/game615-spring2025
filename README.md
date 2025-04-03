@@ -22,6 +22,7 @@ In this course, students will produce many prototypes for 4 or 5 game genres. Di
 | 2.4. [Final Platformer and Reflection](https://mtreanor.com/game615-spring2025/assignments/platformer.html#final-platformer-and-reflection) | 3-19-25 |
 | 3.1. [Grid-based Simulation Part 1](https://mtreanor.com/game615-spring2025/assignments/simulation.html) | 3-26-25 |
 | 3.2. [Grid-based Simulation Part 2](https://mtreanor.com/game615-spring2025/assignments/simulation.html) | 4-2-25 |
+| 4.1. [NPC Dialogue](https://mtreanor.com/game615-spring2025/assignments/people.html) | 4-9-25 |
 
 ## Examples
 
@@ -35,3 +36,4 @@ In this course, students will produce many prototypes for 4 or 5 game genres. Di
 | 3-5-25 | The basics of creating an interactive grid | [code](https://github.com/mtreanor/game615-spring2025/blob/main/examples/simulation/Assets/GridManager.cs) | [play](./prototypes/grid-1/) |
 | 3-19-25 | Updating Cells based on neighbors, clicking on cells | [GridManager](https://github.com/mtreanor/game615-spring2025/blob/main/examples/simulation/Assets/GridManager.cs) [CellScript](https://github.com/mtreanor/game615-spring2025/blob/main/examples/simulation/Assets/CellScript.cs) | [play](./prototypes/grid-2/) |
 | 3-26-25 | A* Algorithm | [GridManager](https://github.com/mtreanor/game615-spring2025/blob/main/examples/simulation/Assets/GridManager.cs) [CellScript](https://github.com/mtreanor/game615-spring2025/blob/main/examples/simulation/Assets/CellScript.cs) | [play](./prototypes/grid-3/) |
+| 4-2-25 | A Dialogue System, Basic Dialogue UI, 3D Models and Animation | [code](https://github.com/mtreanor/game615-spring2025/blob/main/examples/people/Assets/ | [play](./prototypes/animation/) |
