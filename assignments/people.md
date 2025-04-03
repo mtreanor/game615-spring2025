@@ -1,4 +1,6 @@
-# NPC Dialogue Prototype
+# Playing with Simulated People
+
+## NPC Dialogue Prototype
 
 <img src="./images/terranigma.png" width="500" align="right">
 
@@ -12,7 +14,7 @@ The prototype requirements are:
 - At least 2 of the characters should use the conditions to have dialogue that is dependent on the blackboard (see below)
 - **BONUS:** Have your characters be 3D models with animations!
 
-## A Dialogue System
+### A Dialogue System
 
 "A Dialogue System" is a character dialogue toolset for Unity that allows authors to create conditional character dialogue using google sheets. The system allows authors to dynamically create state data, and dynamically select dialogue based on that state. The state can also be accessed and modified from outside the spreadsheet as well. Go [here to download A Dialogue System](https://github.com/mtreanor/ADialogueSystem/blob/main/ADialogueSystem.unitypackage) and see its [GitHub page for setup instructions](https://github.com/mtreanor/ADialogueSystem) for further instructions.
 
@@ -20,7 +22,7 @@ In this system, dialogue is structured around a "quest state" that defines the b
 
 At the approprite time for your game, you can modify the `DialogueManager.scc.questState` variable to move on to the next set of character dialogue options.
 
-## Visual Asset Resources
+### Visual Asset Resources
 
 - [Mixamo](https://www.mixamo.com/)
 - [City People FREE Samples](https://assetstore.unity.com/packages/3d/characters/city-people-free-samples-260446)
