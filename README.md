@@ -27,7 +27,7 @@ In this course, students will produce many prototypes for 4 or 5 game genres. Di
 ## Examples
 
 | Date | Topic | Code | Playable |
-| ----------------- | ---------------------------------- | --- | --- |
+| ----------------------- | ---------------------------------- | --- | --- |
 | 1-15-25 | Breakout - Unity Basics | [code](https://github.com/mtreanor/game615-spring2025/tree/main/examples/breakout/Assets/BallScriptRB.cs) | [play](./prototypes/breakout/) |
 | 1-29-25 | Breakout - Custom Ball Physics | [code](https://github.com/mtreanor/game615-spring2025/tree/main/examples/breakout/Assets/BallPhysics.cs) | [play](./prototypes/breakout-physics/) |
 | 2-5-25 | Breakout - Scaling time per object, trail renderer (with bloom), screen shake (with observer pattern / coroutines)  | [code](https://github.com/mtreanor/game615-spring2025/tree/main/examples/breakout/Assets/BallPhysics.cs) | [play](./prototypes/breakout-effects/) |
