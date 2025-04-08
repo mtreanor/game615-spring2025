@@ -5,7 +5,9 @@ using UnityEngine;
 public class SimpleConditionalConversation 
 {
 	public Dictionary<string, object> gameState;
-	public string questState = "Q1T1";
+	public string questState;
+
+	List<string> questStateHistory = new List<string>();
 
 	Hashtable lines;
 	
@@ -14,13 +16,22 @@ public class SimpleConditionalConversation
 		this.gameState = new Dictionary<string, object>();
 		List<Dictionary<string, object>> data = CSVReader.Read(dataPath);
 		this.loadLines(data);
+		updateQuestState("Q1T1");
 	}
 	
 	public SimpleConditionalConversation(List<Dictionary<string, object>> data)
 	{
 		this.gameState = new Dictionary<string, object>();
 		this.loadLines(data);
+		updateQuestState("Q1T1");
 	}
+
+	public void updateQuestState(string newState) {
+		questStateHistory.Add(newState);
+		questState = newState;
+	}
+
+	
 	
 	
 	// Loads data from the data structure that CSVReader creates when it loads
@@ -68,12 +79,21 @@ public class SimpleConditionalConversation
 	public string getSCCLine(string name) {
 	
 		Dictionary<string, List<SCCLine>> questLines = (Dictionary<string, List<SCCLine>>)this.lines[questState];
+		
+		List <SCCLine> dialogueLines;
+
+		int previousQuestIndex = questStateHistory.Count - 2;
+		while (!questLines.ContainsKey(name) && previousQuestIndex >= 0) {	
+			string previousQuestState = questStateHistory[previousQuestIndex];
+			questLines = (Dictionary<string, List<SCCLine>>)this.lines[previousQuestState];
+			previousQuestIndex--;
+		}
 		if (!questLines.ContainsKey(name)) {
 			return "Ughhh";
-		} 
-		List <SCCLine> lines = questLines[name];
-	
-		foreach (SCCLine line in lines) {
+		}
+		dialogueLines = questLines[name];
+
+		foreach (SCCLine line in dialogueLines) {
 			//Check both conditions until default is reached. Return the first one
 			//Check condition1
 			bool condition1 = checkCondition(line.condition1Left, line.condition1Comp, line.condition1Right);
