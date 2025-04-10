@@ -113,6 +113,10 @@ public class InkStoryManager : MonoBehaviour
     }
 
     public void TalkToCharacter() {
+        // You need to reset the story if you want it to happen over and over
+        // In this way, it might make sense to have a different ink file for 
+        // each interaction.
+        inkStory = new Story(inkJSONAsset.text);
         inkStory.variablesState["player"] = "Mike";
         inkStory.variablesState["responder"] = "Buddy the cat";
         inkStory.variablesState["responder_affinityTowardPlayer"] = 8;
