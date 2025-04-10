@@ -213,6 +213,13 @@ public class SimpleConditionalConversation
 	 */
 	public void setGameStateValue(string id, string op, object right) 
 	{
+		// Allow questState to be modified as an effect. I.e. questState
+		// is a special case with effects.
+		if (id.Equals("questState")) {
+			questState = right.ToString();
+		}
+
+
 		if (op == "add") {
 			if (!this.gameState.ContainsKey(id)) {
 				this.gameState.Add(id, 0);
