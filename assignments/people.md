@@ -55,9 +55,9 @@ The requirements of this prototype are:
 
 ### Using my example
 
-[Get the unitypackage here]([InkStoryManager.cs](https://github.com/mtreanor/game615-spring2025/blob/main/examples/people/inkDemo.unitypackage)).
+[Get the unitypackage here](https://github.com/mtreanor/game615-spring2025/blob/main/examples/people/inkDemo.unitypackage).
 
-I have created a function called `LaunchKnot` that is expected to be called as a coroutine. E.g. `StartCoroutine(LaunchKnot("IntroductoryScene"));`. In order for this to work, you need to create the following UI elements and assign them to [InkStoryManager.cs](https://github.com/mtreanor/game615-spring2025/blob/main/examples/people/Assets/InkStoryManager.cs):
+I have created a function called `LaunchKnot` that is expected to be called as a coroutine. E.g. `StartCoroutine(LaunchKnot("IntroductoryScene"));`. In order for this to work, you need to create the following UI elements and assign them to [InkStoryManager.cs](https://github.com/mtreanor/game615-spring2025/blob/main/examples/people/Assets/MikesInkDemo/InkStoryManager.cs):
 
 1. A Text box game object, called TextBoxUI in my example. This will contain the text from Ink.
 2. A text box that is a child of TextBoxUI to assign to TextBox.
