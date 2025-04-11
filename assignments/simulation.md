@@ -1,8 +1,6 @@
 # Simulation
 
-## A Grid-based Simulation - part 1
-
-*Due 3-26-25*
+## 1. A Grid-based Simulation
 
 <img src="./images/sc2000.png" width="500" align="right">
 
@@ -20,9 +18,7 @@ Your game should be playable at the following link:
 http://<YOUR_GITHUB_USERNAME>.github.io/game-dev-spring2025/builds/simulation-1
 ```
 
-## A Grid-based Simulation - part 2
-
-*Due 4-2-25*
+## 2. A Grid-based Simulation with Pathing
 
 <img src="./images/astar.png" width="500" align="right">
 

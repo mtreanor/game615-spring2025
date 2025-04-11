@@ -1,7 +1,6 @@
 # Innovating with Breakout
 
-## breakout-1
-*DUE: 1-22-25*
+## 1. breakout-1
 
 <img src="./images/breakout.jpg" alt="Breakout 2600 box art" align="right" width="350">
 
@@ -20,9 +19,7 @@ In class, be prepared to:
 - be prepared to receive critical feedback from your classmates
 - share something interesting you learned about or used in order to make your prototype (share technical knowledge)
 
-## breakout-2a and breakout-2b
-
-*DUE: 1-29-25*
+## 2. breakout-2a and breakout-2b
 
 <img src="./images/arkanoid.png" alt="Arkanoid NES gameplay" align="right" width="350">
 
@@ -34,9 +31,7 @@ You may also consider creating series of small "levels" that introduce your game
 
 Your prototypes should be playable online (see instructions below).
 
-## breakout-3
-
-*DUE: 2-5-25*
+## 3. breakout-3
 
 <img src="./images/hyperballoid.png" alt="Hyperballoid PS3 gameplay" align="right" width="450">
 
@@ -64,7 +59,7 @@ This prototype should be more refined than the other ones. Try to make this **th
 
 Your prototype should be playable online (see instructions below).
 
-## Final Prototype
+## 4. Final Prototype
 
 <img src="./images/breakout-beyond.png" alt="Hyperballoid PS3 gameplay" align="right" width="475">
 
@@ -72,7 +67,7 @@ Create one more version of Breakout based on one of your previous prototypes. Ra
 
 Your prototype should be playable online (see instructions below).
 
-## Reflection
+## 5. Reflection
 
 Reflect on your experience creating 4 or 5 prototypes inspired by Breakout. For each prototype, create a section with the folloling:
 

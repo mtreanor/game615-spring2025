@@ -1,6 +1,6 @@
-# Playing with Simulated People
+# Simulating People
 
-## Conditional NPC Dialogue
+## 1. Conditional NPC Dialogue
 
 <img src="./images/terranigma.png" width="500" align="right">
 
@@ -36,7 +36,7 @@ Your prototype should be playable at:
 http://<YOUR_GITHUB_USERNAME>.github.io/game-dev-spring2025/builds/people-1
 ```
 
-## Interactive NPC Dialogue
+## 2. Interactive NPC Dialogue
 
 <img src="./images/persona4.png" width="500" align="right">
 

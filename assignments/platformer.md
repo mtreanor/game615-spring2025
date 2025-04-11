@@ -1,8 +1,6 @@
 # Platformers
 
-## Platformer Analysis
-
-*Due 2-19-25*
+## 1. Platformer Analysis
 
 <p align="center">
     <picture>
@@ -27,11 +25,9 @@ Come to class prepared to discuss your analysis to the class. Your analysis shou
 https://github.com/<YOUR_GITHUB_USERNAME>/game-dev-spring2025/tree/main/prototypes/platformer/analysis.md
 ```
 
-## Platformer Controls - Round 1
+## 2. Platformer Controls - Round 1
 
 <img src="./images/platformer-prototype-1.png" alt="Platformer prototype in Unity" align="right" width="350">
-
-*Due: 2-26-25*
 
 Create a 2d or 3d platformer prototype that implements features [from this list](https://docs.google.com/spreadsheets/d/1RUum3ofbaDgzheoHGNz9Vk3W7qummd1S33_1BpcjhP4/edit?usp=sharing). Each item on the list has a suggested *"Implementation Difficulty Score"*. Make sure whatever you create adds up to a total of 3. Note that there is no score for basic platforming (moving and jumping). Feel free to start from this [code example](https://github.com/mtreanor/game615-spring2025/tree/main/examples/platformer/Assets/PlatformerPlayerController.cs).
 
@@ -43,9 +39,7 @@ Your game should be playable at the following link:
 http://<YOUR_GITHUB_USERNAME>.github.io/game-dev-spring2025/builds/platformer-1
 ```
 
-## Final Platformer and Reflection
-
-*Due 3-19-25*
+## 3. Final Platformer and Reflection
 
 First, make whatever final tweaks to your platformer you intend to make. Your final version should be playable at:
 
