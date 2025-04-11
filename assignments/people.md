@@ -38,6 +38,8 @@ http://<YOUR_GITHUB_USERNAME>.github.io/game-dev-spring2025/builds/people-1
 
 ## Interactive NPC Dialogue
 
+<img src="./images/persona4.png" width="500" align="right">
+
 Last week you used my custom conditional dialogue system, and this week you be making creative use of a more fully featured interactive narrative tool, [Ink](https://www.inklestudios.com/ink/) in order to have interactive character dialogue (note, you are not required to use Ink if you think you can achieve scalable/interesting interactive dialogue in some other way - e.g. building off of ADialogueSystem).
 
 The requirements of this prototype are:
