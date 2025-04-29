@@ -24,6 +24,7 @@ In this course, students will produce many prototypes for 4 or 5 game genres. Di
 | 3.2. [Grid-based Simulation Part 2](https://mtreanor.com/game615-spring2025/assignments/simulation.html) | 4-2-25 |
 | 4.1. [Conditional NPC Dialogue](https://mtreanor.com/game615-spring2025/assignments/people.html) | 4-9-25 |
 | 4.2. [Interactive NPC Dialogue](https://mtreanor.com/game615-spring2025/assignments/people.html#interactive-npc-dialogue) | 4-16-25 |
+| 5. [Final Project](https://mtreanor.com/game615-spring2025/assignments/final.html) | 5-7-25 |
 
 ## Examples
 
