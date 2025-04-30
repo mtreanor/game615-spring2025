@@ -22,6 +22,17 @@ Your prototype should be playable at:
 http://<YOUR_GITHUB_USERNAME>.github.io/game-dev-spring2025/builds/final
 ```
 
-## FINAL MEETING
+## FINAL PRESENTATION
 
-We will be meeting during the final. If you are not in the area, I will send out a zoom link (but I will be on campus and in person, so please come if you can!)
+The final presentation will be at the Game Center Spring showcase on Monday May 5th at 6:00pm.
+
+Your final presentation must have two components:
+
+1. A 10-20 clip that shows the prototype before
+2. A 10-20 clip that shows the current version of your final project
+
+In your presentation you shoudl **very quickly** explain something insightful about game design that you learned by making these prototypes.
+
+Your presentation should be no more than 3 slides, and should take between 1 and 2 minutes. Put your slides in the slide deck sent to you over email (search for "[GAME-DEV] Final Presentation").
+
+If you cannot make it to the final presentation you are still required to put slides intop the slide deck.
